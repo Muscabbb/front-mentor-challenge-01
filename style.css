@@ -1,0 +1,212 @@
+/* start global values */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* global variables */
+:root{
+    /* primary vars */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /*  Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+body{
+    font-size: 15px;
+    font-family: poppins, "sans-serif";
+}
+
+
+.title{
+    color: var(--Very-Dark-Blue);
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title{
+    line-height: 1.2;
+    font-size: 1.2em;
+    color: var(--Grayish-Blue);
+}
+
+/* end global values */
+
+
+/* start styling the main container */
+.container{
+    margin: 20px 200px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+}
+
+
+@media (max-width: 1150px){
+    .container{
+        margin: 20px auto;
+    }
+}
+
+/* styling the text part  */
+.title-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text h1{
+    font-weight: 200;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--Grayish-Blue);
+}
+
+
+.title-text h1:last-of-type{
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.title-text p{
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.2em;
+    color: var(--Grayish-Blue);
+}
+
+/* styling the text part  */
+
+/* styling cards-container */
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+
+.card{
+    padding:20px;
+    box-shadow: 0 0 10px 0 var(--Grayish-Blue);
+    border-radius: 5px;
+    border-top:5px solid var(--Red) ;
+    flex-basis: 300px;
+}
+
+.team-builder{
+    order: 2;
+}
+
+.karma{
+    order: 4;
+    border-color: var(--Orange);
+    position: relative;
+    top: 50px;
+    left: 330px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1150px){
+    .karma{
+        left: 400px;
+    }
+}
+
+.superviser{
+    order: 1;
+    border-color: var(--Cyan);
+    position: relative;
+    top: 100px;
+}
+
+.calculator{
+    order: 3;
+    border-color: var(--Blue);
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+
+
+.text{
+    margin-bottom: 50px;
+}
+
+.img{
+    display: flex;
+    justify-content: flex-end;
+}
+/* styling cards-container */
+
+
+
+
+
+/* end styling the main container */
+
+
+/* media part  */
+@media (max-width: 1100px){
+    body{
+        font-size: 10px;
+    }
+
+    .cards-container{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .team-builder{
+        order: 2;
+    }
+    
+    .karma{
+        order: 4;
+        border-color: var(--Orange);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 100px;
+    }
+    
+    .superviser{
+        order: 1;
+        border-color: var(--Cyan);
+        position: relative;
+        top: 0px;
+    }
+    
+    .calculator{
+        order: 3;
+        border-color: var(--Blue);
+        position: relative;
+        top: 0px;
+    }
+}
+
+
+/* media part  */
+
+
